@@ -689,8 +689,7 @@ input, select, textarea {
 			/*margin: 0 0 2rem 0;*/
 			margin-left: auto;
 			margin-right: auto;
-			width: 200%;
-			height: 200%;
+			border-radius: 50%;
 		}
 
 			.image.fit img {
