@@ -686,10 +686,11 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			/*margin: 0 0 2rem 0;*/
-			margin-left: auto;
-			margin-right: auto;
-			border-radius: 50%;
+			margin: 0 0 2rem 0;
+			/*margin-left: auto;
+			margin-right: auto;*/
+			/*border-radius: 50%;*/
+			width: 100%;
 		}
 
 			.image.fit img {
