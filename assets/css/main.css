@@ -715,7 +715,7 @@ input, select, textarea {
 			z-index: 100;
 			position: absolute;
 			top: 50px;
-			left: 1000px;
+			left: 10000px;
 		}
 
 		@media screen and (max-width: 736px) {
