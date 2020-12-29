@@ -715,6 +715,10 @@ input, select, textarea {
 			z-index: 100;
 		}
 
+			.image.center img {
+				width:50%;
+			}
+
 		@media screen and (max-width: 736px) {
 
 			.image.main {
