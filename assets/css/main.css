@@ -713,9 +713,6 @@ input, select, textarea {
 			margin-right: auto;
 			width: 50%;
 			z-index: 100;
-			position: absolute;
-			top: 50px;
-			left: 30px;
 		}
 
 		@media screen and (max-width: 736px) {
