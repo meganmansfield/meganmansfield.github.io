@@ -15,16 +15,18 @@ $headers .= 'Reply-To: '.$field_email."\r\n";
 
 $mail_status = mail($mail_to, $subject, $body_message, $headers);
 
+if ($mail_status) { ?>
+    <script language="javascript" type="text/javascript">
+        alert('Thank you for the message. We will contact you shortly.');
+        window.location = 'contact.html';
+    </script>
 <?php
-    if (isset($_POST['submitbtn']))
-    {
-        if (mail($mail_to, $subject, $body_message, $headers))
-        {
-            echo "<font color=\"green\"><p>Your message has been sent!</p></font>";
-        }
-        else
-        {
-        echo "<font color=\"red\"><p>Your message sending has failed! Please manually email (your email)!</p></font>";
-        }
-    }
+}
+else { ?>
+    <script language="javascript" type="text/javascript">
+        alert('Message failed. Please, send an email to gordon@template-help.com');
+        window.location = 'contact.html';
+    </script>
+<?php
+}
 ?>
